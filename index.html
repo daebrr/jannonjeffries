@@ -18,10 +18,11 @@
   
   <div class="js-animsition animsition" data-animsition-in-class="fade-in" data-animsition-out-class="fade-out">
 
-    <header class="templateux-navbar" data-aos="fade-down">
+    <header id="navbar" class="templateux-navbar" data-aos="fade-down">
+      <div id="navbarBG" class="navbar-bg"></div>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-sm-3 col-3"><div class="site-logo"><a href="index.html" class="animsition-link">Strategy</a></div></div>
+          <div class="col-sm-3 col-3"><div class="site-logo"><a href="#top" class="animsition-link">Strategy</a></div></div>
           <div class="col-sm-9 col-9 text-right">
 
             <button class="hamburger hamburger--spin toggle-menu ml-auto js-toggle-menu" type="button">
@@ -32,11 +33,10 @@
 
             <nav class="templateux-menu js-templateux-menu" role="navigation">
               <ul class="list-unstyled">
-                <li class="d-md-none d-block active"><a href="index.html" class="animsition-link">Home</a></li>
-                <li><a href="work.html" class="animsition-link">Work</a></li>
-                <li><a href="about.html" class="animsition-link">About</a></li>
-                <li><a href="blog.html" class="animsition-link">Blog</a></li>
-                <li><a href="contact.html" class="animsition-link">Contact</a></li>
+                <!-- <li class="d-md-none d-block active"><a href="#top">Home</a></li> -->
+                <li><a id="portfolioNav" href="#portfolioSection">Portfolio</a></li>
+                <li><a id="aboutNav" href="#aboutSection">About</a></li>
+                <li><a id="contactNav" href="#contactSection">Contact</a></li>
               </ul>
             </nav>  
           </div>
@@ -44,20 +44,21 @@
       </div>
     </header>
 
-    <!-- END templateux-navbar -->
-    <section class="templateux-hero">
+    <!-- Splash -->
+    <section id="top" class="hero">
       <div class="container">
         <div class="row align-items-center justify-content-center intro">
           <div class="col-md-10" data-aos="fade-up">
-            <h1>We are Strategy. A digitally minded creative agency based in NYC.</h1>
-            <a href="#next" class="go-down js-smoothscroll"></a>
+            <h1>Hello, my name is Jannon & I try to make the world a prettier place one design at a time.</h1>
+            <!-- <a href="#next" class="go-down js-smoothscroll"></a> -->
           </div>
         </div>
       </div>
     </section>
-    <!-- END templateux-hero -->
+    <!-- End Splash-->
 
-    <section class="templateux-portfolio-overlap" id="next">
+    <!-- Portfolio -->
+    <section id="portfolioSection" class="templateux-portfolio-overlap" id="next">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6" data-aos="fade-up">
@@ -87,8 +88,6 @@
             </a>
           </div>
         </div>
-        <!-- END row -->
-    
         <div class="row">
           <div class="col-lg-4 col-md-6" data-aos="fade-up">
             <a class="project animsition-link" href="work-single.html">
@@ -131,13 +130,12 @@
           </div>
           
         </div>
-        <!-- END row -->
       </div>
     </section>
-
+  <!-- End Portfolio-->
    
-    <!-- END section -->
-    <section class="templateux-section">
+    <!-- About -->
+    <section id="aboutSection" class="templateux-section">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-4" data-aos="fade-up">
@@ -179,7 +177,6 @@
               </div>
 
             </div>
-            <!-- END row -->
             <div class="row clearfix">
               <div class="col-lg-6">
                 <div class="media templateux-media mb-4">
@@ -206,85 +203,23 @@
                 
               </div>
             </div>
-            <!-- END row -->
 
-            
           </div>
         </div>
       </div>
     </section>
-    <!-- END section -->
+    <!-- End About -->
 
-    <!-- END section -->
-    <section class="templateux-section mb-5">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-4" data-aos="fade-up">
-            <h2 class="section-heading mt-3">Recent Blog Posts</h2>
-          </div>
-          <div class="col-md-8">
-            <div class="row">
-              <div class="col-lg-12">
-                <a class="post animsition-link" href="blog-single.html" data-aos="fade-up" data-aos-delay="100">
-                  <figure>
-                    <img src="images/img_1.jpg" alt="Free Template" class="img-fluid">  
-                  </figure>
-                  <div class="post-hover">
-                    <div class="post-hover-inner">
-                      <h2>45 Cool Bag Illustrations</h2>
-                      <span>February 21, 2018</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-lg-6">
-                <a class="post animsition-link" href="blog-single.html" data-aos="fade-up" data-aos-delay="200">
-                  <figure>
-                    <img src="images/img_4.jpg" alt="Free Template" class="img-fluid">  
-                  </figure>
-                  <div class="post-hover">
-                    <div class="post-hover-inner">
-                      <h2>45 Cool Bag Illustrations</h2>
-                      <span>February 21, 2018</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-6">
-                <a class="post animsition-link" href="blog-single.html" data-aos="fade-up" data-aos-delay="300">
-                  <figure>
-                    <img src="images/img_5.jpg" alt="Free Template" class="img-fluid">  
-                  </figure>
-                  <div class="post-hover">
-                    <div class="post-hover-inner">
-                      <h2>45 Cool Bag Illustrations</h2>
-                      <span>February 21, 2018</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row" data-aos="fade-up" data-aos-delay="400">
-          <div class="col-md-8 ml-auto">
-            <a href="blog.html" class="animsition-link">Read All Blog Posts </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="templateux-section templateux-cta mt-5" data-aos="fade-up">
+    <!-- Contact -->
+    <div id ="copiedAlert" class="copied-alert"><p>Copied to clipboard</p></div>
+    <div id="contactSection" class="contact-section templateux-section templateux-cta mt-5" data-aos="fade-up">
       <div class="container-fluid">
         <div class="cta-inner">
-          <h2><span class="words-1">Email Me</span><span id="copyEmail" class="words-2" onclick="copyToClipboard('#copyEmail')">jannonjeffries@gmail.com</span></h2>
+          <h2><span class="words-1">Email Me</span><span id="copyEmail" class="words-2 copy-email" onclick="copyToClipboard('#copyEmail')">jannonjeffries@gmail.com</span></h2>
         </div>
       </div>
     </div>
-    <!-- END call to action -->
+    <!-- End Contact -->
 
     <footer class="templateux-footer">
       <div class="container-fluid">
@@ -297,7 +232,6 @@
           </p>
           </div>
           <div class="col-md-6 text-md-right text-center footer-social">
-            <a href="#" class="p-3"><span class="icon-facebook2"></span></a>
             <a href="#" class="p-3"><span class="icon-twitter2"></span></a>
             <a href="#" class="p-3"><span class="icon-dribbble2"></span></a>
             <a href="#" class="p-3"><span class="icon-instagram"></span></a>

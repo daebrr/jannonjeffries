@@ -107,9 +107,57 @@ jQuery(document).ready(function($){
 // Copy to clipboard
 
 function copyToClipboard(element) {
-  var $temp = $("<input>");
-  $("body").append($temp);
+  var $temp = $('<input>');
+  $('body').append($temp);
   $temp.val($(element).text()).select();
-  document.execCommand("copy");
+  document.execCommand('copy');
   $temp.remove();
+}
+
+$('#copyEmail').click(function() {
+  $('#copiedAlert').css('display', 'block');
+  $('#copiedAlert').delay(1000).fadeOut(300)
+});
+
+
+// Smooth Scroll
+
+$('#portfolioNav').click(function() {
+  event.preventDefault();
+  $('html, body').animate({
+      scrollTop: $('#portfolioSection').offset().top
+  }, 500);
+});
+
+$('#aboutNav').click(function() {
+  event.preventDefault();
+  $('html, body').animate({
+      scrollTop: $('#aboutSection').offset().top
+  }, 750);
+});
+
+$('#contactNav').click(function() {
+  event.preventDefault();
+  $('html, body').animate({
+      scrollTop: $('#contactSection').offset().top
+  }, 1000);
+});
+
+// Sticky Nav
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById('navbar');
+var sticky = navbar.offsetTop;
+
+$('#navbarBG').hide();
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    navbar.classList.add('sticky')
+    $('#navbarBG').fadeIn();
+  } else {
+    navbar.classList.remove('sticky');
+    $('#navbarBG').fadeOut();
+  }
 }

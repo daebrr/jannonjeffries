@@ -11,7 +11,7 @@ body {
   background: yellow; }
 
 h1, h2, h3, h4, h5 {
-  color: #000; }
+  color: #1d1d24; }
 
 a {
   transition: .3s all ease; }
@@ -44,7 +44,7 @@ a {
     z-index: 9999; }
     .templateux-navbar .site-logo a {
       font-size: 30px;
-      color: #000; }
+      color: #1d1d24; }
   .templateux-navbar .templateux-menu {
     position: relative; }
     .templateux-navbar .templateux-menu ul {
@@ -56,7 +56,7 @@ a {
           font-size: 13px;
           text-transform: uppercase;
           letter-spacing: .2em;
-          color: #000;
+          color: #1d1d24;
           position: relative;
           padding-bottom: 5px;
           display: block; }
@@ -103,11 +103,11 @@ a {
       .templateux-navbar .templateux-menu ul {
         margin-left: 0px; } }
   .templateux-navbar.navbar-light .site-logo a {
-    color: #fff; }
+    color: #f5f0eb; }
   .templateux-navbar.navbar-light .hamburger .hamburger-inner, .templateux-navbar.navbar-light .hamburger .hamburger-inner::before, .templateux-navbar.navbar-light .hamburger .hamburger-inner::after {
-    background-color: #fff; }
+    background-color: #f5f0eb; }
   .templateux-navbar.navbar-light .templateux-menu ul li a {
-    color: #fff; }
+    color: #f5f0eb; }
 
 .menu-open .templateux-navbar {
   position: fixed;
@@ -116,10 +116,10 @@ a {
 
 @media (max-width: 767.98px) {
   .menu-open .site-logo a {
-    color: #000 !important; } }
+    color: #1d1d24 !important; } }
 
 .menu-open .navbar-light .hamburger .hamburger-inner, .menu-open .navbar-light .hamburger .hamburger-inner::before, .menu-open .navbar-light .hamburger .hamburger-inner::after {
-  background-color: #000; }
+  background-color: #1d1d24; }
 
 .menu-open .templateux-menu li {
   opacity: 0;
@@ -134,26 +134,27 @@ a {
 
 @media (max-width: 767.98px) {
   .menu-open .templateux-menu li a {
-    color: #000 !important; } }
+    color: #1d1d24 !important; } }
 
-.templateux-hero {
+.hero {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
-  overflow: hidden; }
-  .templateux-hero .lead {
+  overflow: hidden;
+  background: #c99297; }
+  .hero .lead {
     font-size: 28px; }
     @media (max-width: 991.98px) {
-      .templateux-hero .lead {
+      .hero .lead {
         font-size: 20px; } }
-  .templateux-hero .cover {
+  .hero .cover {
     position: absolute;
     display: block;
     width: 100%;
     height: 100%;
     z-index: -1; }
-    .templateux-hero .cover img {
+    .hero .cover img {
       position: absolute;
       display: block;
       min-width: 100%;
@@ -161,7 +162,7 @@ a {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
-  .templateux-hero.overlay:before {
+  .hero.overlay:before {
     content: "";
     position: absolute;
     background: rgba(0, 0, 0, 0.7);
@@ -169,20 +170,20 @@ a {
     top: 0;
     bottom: 0;
     right: 0; }
-  .templateux-hero.overlay h1 {
-    color: #fff; }
-  .templateux-hero.overlay .lead {
-    color: #fff;
+  .hero.overlay h1 {
+    color: #f5f0eb; }
+  .hero.overlay .lead {
+    color: #f5f0eb;
     opacity: .5; }
 
-.templateux-hero, .intro {
+.hero, .intro {
   height: 90vh;
   min-height: 700px; }
-  .templateux-hero h1, .intro h1 {
-    color: #000;
+  .hero h1, .intro h1 {
+    color: #1d1d24;
     font-size: 70px; }
     @media (max-width: 991.98px) {
-      .templateux-hero h1, .intro h1 {
+      .hero h1, .intro h1 {
         font-size: 36px; } }
 
 .templateux-portfolio-overlap {
@@ -244,7 +245,7 @@ a {
   .templateux-cta h2 {
     font-weight: normal;
     margin-bottom: 0;
-    color: #000;
+    color: #1d1d24;
     position: relative;
     bottom: 0;
     transition: .4s all ease; }
@@ -258,7 +259,7 @@ a {
     opacity: 1;
     visibility: visible;
     top: 0px;
-    color: #fff; }
+    color: #f5f0eb; }
 
 .section-heading {
   font-size: 14px;
@@ -274,7 +275,7 @@ a {
     top: 50%;
     right: 0;
     transform: translateX(-50%);
-    background: #000; }
+    background: #1d1d24; }
 
 .project, .post {
   position: relative;
@@ -306,7 +307,7 @@ a {
       transition: .3s all ease;
       text-align: center; }
       .project .project-hover .project-hover-inner h2, .project .project-hover .post-hover-inner h2, .project .post-hover .project-hover-inner h2, .project .post-hover .post-hover-inner h2, .post .project-hover .project-hover-inner h2, .post .project-hover .post-hover-inner h2, .post .post-hover .project-hover-inner h2, .post .post-hover .post-hover-inner h2 {
-        color: #fff;
+        color: #f5f0eb;
         font-size: 26px;
         line-height: 1.2;
         transition: .3s all ease;
@@ -315,7 +316,7 @@ a {
         position: relative;
         bottom: -30px; }
       .project .project-hover .project-hover-inner span, .project .project-hover .post-hover-inner span, .project .post-hover .project-hover-inner span, .project .post-hover .post-hover-inner span, .post .project-hover .project-hover-inner span, .post .project-hover .post-hover-inner span, .post .post-hover .project-hover-inner span, .post .post-hover .post-hover-inner span {
-        color: rgba(255, 255, 255, 0.8);
+        color: rgba(245, 240, 235, 0.8);
         opacity: 0;
         visibility: hidden;
         position: relative;
@@ -349,7 +350,7 @@ a {
   .templateux-footer .footer-social {
     position: relative; }
     .templateux-footer .footer-social a {
-      color: #b3b3b3;
+      color: #ceced8;
       position: relative;
       transition: .3s all ease;
       font-size: 26px; }
@@ -379,7 +380,7 @@ textarea.form-control {
   font-size: 13px;
   letter-spacing: .2em;
   text-transform: uppercase;
-  color: #fff;
+  color: #f5f0eb;
   border-radius: 30px;
   border: none;
   transition: .3s all ease; }
@@ -389,7 +390,7 @@ textarea.form-control {
     background: #dc3545; }
     .button.button--red:hover {
       text-decoration: none;
-      color: #fff;
+      color: #f5f0eb;
       box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.4);
       background: #d32535; }
 
@@ -453,7 +454,7 @@ textarea.form-control {
     .owl-carousel .owl-dots .owl-dot:active, .owl-carousel .owl-dots .owl-dot:focus {
       outline: none; }
     .owl-carousel .owl-dots .owl-dot span {
-      border: 2px solid #000;
+      border: 2px solid #1d1d24;
       background: none;
       transition: .3s all ease;
       position: absolute;
@@ -472,7 +473,7 @@ textarea.form-control {
   position: absolute;
   z-index: 9; }
   .owl-carousel.dots-overlap .owl-dots .owl-dot span {
-    border: 2px solid #fff;
+    border: 2px solid #f5f0eb;
     background: none;
     transition: .3s all ease;
     position: absolute;
@@ -500,9 +501,9 @@ textarea.form-control {
       .testimony blockquote {
         font-size: 30px; } }
     .testimony blockquote p {
-      color: #000; }
+      color: #1d1d24; }
   .testimony .author {
-    color: #000;
+    color: #1d1d24;
     text-transform: uppercase;
     letter-spacing: .2em; }
 
@@ -515,7 +516,7 @@ textarea.form-control {
     color: #ccc; }
   .work-detail strong {
     font-weight: normal;
-    color: #000; }
+    color: #1d1d24; }
 
 .custom-pagination {
   width: 100%;
@@ -544,9 +545,9 @@ textarea.form-control {
     border-radius: 50% !important;
     font-size: 16px;
     background: #dc3545;
-    color: #fff; }
+    color: #f5f0eb; }
     .custom-pagination li.active a:hover, .custom-pagination li.active a:focus, .custom-pagination .prev.active a:hover, .custom-pagination .prev.active a:focus, .custom-pagination .next.active a:hover, .custom-pagination .next.active a:focus {
-      color: #fff; }
+      color: #f5f0eb; }
   .custom-pagination .prev {
     float: left; }
   .custom-pagination .next {
@@ -557,7 +558,7 @@ textarea.form-control {
   font-size: 12px;
   text-transform: uppercase;
   font-weight: bold;
-  color: #fff;
+  color: #f5f0eb;
   letter-spacing: .1em; }
   .post-info > div {
     display: inline-block; }
@@ -573,7 +574,7 @@ textarea.form-control {
   margin-bottom: 7px;
   margin-right: 4px;
   border-radius: 4px;
-  color: #000;
+  color: #1d1d24;
   border: 1px solid #ccc;
   font-size: 11px; }
   .tagcloud a:hover {
@@ -615,16 +616,16 @@ textarea.form-control {
         color: #ccc; }
       .comment-list li .comment-body .reply {
         padding: 5px 10px;
-        background: #e6e6e6;
-        color: #000;
+        background: white;
+        color: #1d1d24;
         text-transform: uppercase;
         font-size: 11px;
         letter-spacing: .1em;
         font-weight: 400;
         border-radius: 4px; }
         .comment-list li .comment-body .reply:hover {
-          color: #fff;
-          background: black; }
+          color: #f5f0eb;
+          background: #1d1d24; }
 
 .search-form .form-group {
   position: relative; }
@@ -642,7 +643,7 @@ textarea.form-control {
   font-size: 15px;
   width: 100%;
   float: left;
-  background: #fff; }
+  background: #f5f0eb; }
   .sidebar-box *:last-child {
     margin-bottom: 0; }
   .sidebar-box h3 {
@@ -667,7 +668,7 @@ textarea.form-control {
       top: 0;
       color: #ccc; }
   .categories li.active a, .sidelink li.active a {
-    color: #000;
+    color: #1d1d24;
     font-style: italic; }
 
 .post-meta {
@@ -682,12 +683,12 @@ textarea.form-control {
 
 .block-38 .block-38-header .block-38-heading {
   font-size: 18px;
-  color: #000;
+  color: #1d1d24;
   margin: 0;
   font-weight: 300; }
 
 .block-38 .block-38-header .block-38-subheading {
-  color: #b3b3b3;
+  color: #ceced8;
   margin: 0 0 20px 0;
   text-transform: uppercase;
   font-size: 15px; }
@@ -696,3 +697,36 @@ textarea.form-control {
   width: 90px;
   border-radius: 50%;
   margin-bottom: 20px; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+.navbar-bg {
+  position: fixed;
+  top: 11px;
+  width: 100%;
+  height: 75px;
+  background: #d1d5dc;
+  opacity: .9; }
+
+span.copy-email:hover {
+  color: #1d1d24 !important;
+  cursor: pointer; }
+
+.copied-alert {
+  display: none;
+  background: #d1d5dc;
+  font-size: 13px;
+  width: 136px;
+  height: 24px;
+  margin: 0 auto;
+  bottom: 379px;
+  left: 50%;
+  opacity: .95;
+  position: fixed;
+  border-radius: 3px;
+  z-index: 100; }
+  .copied-alert p {
+    text-align: center; }
