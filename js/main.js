@@ -80,10 +80,13 @@ jQuery(document).ready(function($){
     var $this = $(this);
 
     if ($('body').hasClass('menu-open')) {
+      updateNavColors(isStickyNav());
       $this.removeClass('is-active');
       $('body').removeClass('menu-open');  
       $('.js-templateux-menu li').removeClass('staggard');
+      
     } else {
+      updateNavColors(true);
       $this.addClass('is-active');
       $('body').addClass('menu-open');  
 
@@ -122,70 +125,119 @@ $('#copyEmail').click(function() {
 
 // Smooth Scroll
 
+$('#logo').click(function() {
+    $('html, body').animate({
+        scrollTop: $('#navbar').offset().top
+    }, 500);
+});
+
 $('#portfolioNav').click(function() {
-  event.preventDefault();
+  if (isHomepage()) {
+    event.preventDefault();
+  }
   $('html, body').animate({
       scrollTop: $('#portfolioSection').offset().top
   }, 500);
   $('.js-toggle-menu').removeClass('is-active');
   $('body').removeClass('menu-open');  
   $('.js-templateux-menu li').removeClass('staggard');
-  $('.js-templateux-menu').fadeOut(300);
-});
 
-// $('#aboutNav').click(function() {
-//   event.preventDefault();
-//   $('html, body').animate({
-//       scrollTop: $('#aboutSection').offset().top
-//   }, 750);
-//   $('.js-toggle-menu').removeClass('is-active');
-//       $('body').removeClass('menu-open');  
-//       $('.js-templateux-menu li').removeClass('staggard');
-//       $('.js-templateux-menu').fadeOut(300);
-// });
+  function mediaQuery(x) {
+    if (x.matches) { 
+      $('.js-templateux-menu').fadeOut(300);
+     }
+  }
 
-$('#logo').click(function() {
-  event.preventDefault();
-    $('html, body').animate({
-        scrollTop: $('#navbar').offset().top
-    }, 500);
+  var x = window.matchMedia('(max-width: 768px)')
+  mediaQuery(x) 
+  x.addListener(mediaQuery) 
+
 });
 
 $('#contactNav').click(function() {
-  event.preventDefault();
+  if (isHomepage()) {
+    event.preventDefault();
+  }
   $('html, body').animate({
       scrollTop: $('#contactSection').offset().top
   }, 1000);
   $('.js-toggle-menu').removeClass('is-active');
       $('body').removeClass('menu-open');  
       $('.js-templateux-menu li').removeClass('staggard');
-      $('.js-templateux-menu').fadeOut(300);
+
+      function mediaQuery(x) {
+        if (x.matches) { 
+          $('.js-templateux-menu').fadeOut(300);
+         }
+      }
+  
+      var x = window.matchMedia('(max-width: 768px)')
+      mediaQuery(x) 
+      x.addListener(mediaQuery) 
+
 });
 
-// Sticky Nav
+$('#resumeNav').click(function() {
+ 
+  function mediaQuery(x) {
+    if (x.matches) { 
+      $('.js-templateux-menu').fadeOut(300);
+     }
+  }
 
-window.onscroll = function() {myFunction()};
+  var x = window.matchMedia('(max-width: 768px)')
+  mediaQuery(x) 
+  x.addListener(mediaQuery) 
 
-var navbar = document.getElementById('navbar');
-var sticky = navbar.offsetTop;
+});
 
-$('#navbarBG').hide();
+function isStickyNav() {
+  return window.pageYOffset > sticky;
+}
 
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    navbar.classList.add('sticky')
-    $('#navbarBG').fadeIn();
+function updateNavColors(sticky) {
+  if (sticky) {
     $('#logo img').attr('src','images/logo_rose-gold.svg');
     $('.templateux-menu a').css('color', '#c99297');
     $('.hamburger-inner').addClass('changed');
   } else {
-    navbar.classList.remove('sticky');
-    $('#navbarBG').fadeOut();
     $('#logo img').attr('src','images/logo_white.svg');
-    $('.templateux-menu a').css('color', '#f5f0eb');
+    $('.templateux-menu a').css('color', '#f4efea');
     $('.hamburger-inner').removeClass('changed');
   }
 }
+
+// Sticky Nav
+
+  window.onscroll = function() {stickyNav()};
+
+  var navbar = document.getElementById('navbar');
+  var sticky = navbar.offsetTop;
+
+  $('#navbarBG').hide();
+
+  function stickyNav() {
+    if (isStickyNav() || ($('body').hasClass('menu-open'))) {
+      navbar.classList.add('sticky')
+      $('#navbarBG').fadeIn();
+      updateNavColors(true);
+    } else {
+      navbar.classList.remove('sticky');
+      $('#navbarBG').fadeOut();
+      updateNavColors(false);
+    }
+  }
+
+  // Homepage Function
+
+  function isHomepage() {
+    return $('body').hasClass('home-page');
+    }
+
+
+
+
+
 
 
 
