@@ -438,6 +438,7 @@ a {
 	figure {
 		margin: 0;
 		position: relative;
+		box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
 	}
 	.project-hover, .post-hover {
 		position: absolute;
@@ -484,12 +485,12 @@ a {
 		
 	}
 	&:hover, &:focus {
-		.project-hover, .post-hover {
+		.project-hover, .post-hover { 
 			visibility: visible;
-			opacity: 1;
+			opacity: .9;
 			.project-hover-inner, .post-hover-inner {
 				visibility: visible;
-				opacity: 1;
+				opacity: .9;
 				animation-delay: 10s;
 				h2 {
 					opacity: 1;
