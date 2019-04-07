@@ -713,6 +713,10 @@ textarea.form-control {
   top: 0;
   width: 100%; }
 
+.spacer {
+  display: block;
+  height: 16px; }
+
 .navbar-bg {
   position: fixed;
   top: 0;
@@ -792,9 +796,8 @@ span.copy-email:hover {
       .templateux-hero .project-intro {
         height: 40vh;
         align-items: flex-end !important;
-        margin-bottom: 24px; }
-        .templateux-hero .project-intro h1 {
-          padding-bottom: 12px; } }
+        margin-bottom: 24px;
+        padding-bottom: 12px; } }
 
 .cupcake-how-to {
   max-width: 100%;
