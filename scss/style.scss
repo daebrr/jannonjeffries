@@ -24,6 +24,13 @@ body {
 	font-family: $font-family-sans-serif;
 }
 
+a {
+	color: $rose-gold;
+	&:hover {
+		color: $dark-rose;
+	}
+}
+
 ::-moz-selection { background: $gray; }
 ::selection { background: $gray; } 
 h1, h2, h3, h4, h5 {
@@ -34,7 +41,7 @@ a {
 	&:hover, &:active, &:focus {
 		text-decoration: none;
 		outline: none;
-	}
+	} 
 }
 
 .templateux-navbar {
