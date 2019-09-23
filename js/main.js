@@ -238,9 +238,9 @@ function updateNavColors(sticky) {
    function mediaQuery(x) {
         if (x.matches) { 
           console.log('hello');
-          $('#cohenHideMobile').removeClass('.cohen')
+          $('#cocoenHideMobile').removeClass('.cocoen')
          } else {
-          $('#cohenHideMobile').addClass('.cohen');
+          $('#cocoenHideMobile').addClass('.cocoen');
          }
       }
 
