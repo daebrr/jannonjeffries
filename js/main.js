@@ -237,14 +237,15 @@ function updateNavColors(sticky) {
 
    function mediaQuery(x) {
         if (x.matches) { 
-          console.log('hello');
-          $('#cocoenHideMobile').removeClass('.cocoen')
+          $('#cocoenHideMobile').removeClass('cocoen');
          } else {
-          $('#cocoenHideMobile').addClass('.cocoen');
+          $('#cocoenHideMobile').addClass('cocoen');
          }
       }
 
-      var x = window.matchMedia('(max-width: 768px)');    
+      var x = window.matchMedia('(max-width: 768px)')
+      mediaQuery(x) 
+      x.addListener(mediaQuery)     
 
   
 
