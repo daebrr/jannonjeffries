@@ -244,10 +244,7 @@ function updateNavColors(sticky) {
          }
       }
 
-      var x = window.matchMedia('(max-width: 768px)')
-      mediaQuery(x) 
-      x.addListener(mediaQuery) 
-    
+      var x = window.matchMedia('(max-width: 768px)');    
 
   
 
