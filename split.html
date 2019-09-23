@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Jannon Jeffries &mdash; Portfolio</title>
+  <title>Jannon Jeffries &mdash; Splitwise App POC Redesign</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/aos.min.css">
   <link rel="stylesheet" href="css/hamburgers/hamburgers.min.css">
@@ -40,11 +40,9 @@
   <meta name="msapplication-TileImage" content="images/fav/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <!-- Favicon End-->
-
 </head>
 
-<body class="home-page">
-
+<body>
   <div class="js-animsition animsition" data-animsition-in-class="fade-in" data-animsition-out-class="fade-out">
 
     <header id="navbar" class="templateux-navbar" data-aos="fade-down">
@@ -52,7 +50,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-3 col-3">
-            <div class="site-logo"><a id="logo" href="#navbar"><img width="72" src="images/logo_white.svg"></a></div>
+            <div class="site-logo"><a id="logo" href="index.html"><img width="72" src="images/logo_white.svg"></a></div>
           </div>
           <div class="col-sm-9 col-9 text-right hamburger-container">
 
@@ -64,8 +62,8 @@
 
             <nav class="templateux-menu js-templateux-menu" role="navigation">
               <ul>
-                <li><a id="portfolioNav" href="#portfolioSection">Portfolio</a></li>
-                <li><a id="contactNav" href="#contactSection">Contact</a></li>
+                <li><a id="portfolioNav" href="index.html#portfolioSection">Portfolio</a></li>
+                <li><a id="contactNav" href="index.html#contactSection">Contact</a></li>
                 <li><a id="resumeNav" target="_blank" href="https://docs.google.com/document/d/15PjJdcsv_VlETdsOXHVBKPmZ6eb9s4rx74S8aS64bFc/edit?usp=sharing">R&eacute;sum&eacute;</a></li>
               </ul>
             </nav>
@@ -74,264 +72,84 @@
       </div>
     </header>
 
-    <!-- Splash -->
-    <section id="top" class="hero">
-      <div class="container">
-        <div class="row align-items-center justify-content-center intro">
-          <div class="col-md-10" data-aos="fade-up">
-            <h1>Hello, my name is Jannon & I try to make the world a prettier place one design at a time.</h1>
+   <!-- Project -->
+   <section class="templateux-hero"  data-scrollax-parent="true">
+        <div class="container">
+          <div class="row align-items-center justify-content-center project-intro">
+            <div class="col-lg-10" data-aos="fade-up">
+              <h1>Splitwise App Mock Redesign</h1>
+              <span>Redesigning the Splitwise App on a Small Scale</span>   
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- End Splash-->
-
-    <!-- Portfolio -->
-    <section id="portfolioSection" class="templateux-portfolio-overlap home-portfolio" id="next">
-      <div class="container-fluid">
-
-        <div class="row">
-          <!-- Packages Start -->
-          <div class="col-lg-6" data-aos="fade-up">
-            <a class="project animsition-link" href="packages.html">
-              <figure>
-                <img src="images/projects/packages/packages-thumb.jpg" alt="Football Fan Experience Packages" class="img-fluid">
-              </figure>
-              <div class="project-hover">
-                <div class="project-hover-inner">
-                  <h2>Fan Experience Packages</h2>
-                  <span>View Project</span>
+      </section>
+      <!-- END templateux-hero -->
+      <div class="spacer"></div>
+      <div class="spacer"></div>
+      <section class="templateux-portfolio-overlap">
+        <div class="container" data-aos="fade-up">
+              <div class="row justify-content-center">
+                <div class="col-lg-10">
+                  <p class="special"><strong>Problem: How can I make it easier for users to navigate the Splitwise app and add their expenses?</strong><br/>
+                    As a personal project, I decided to redesign some of the Splitwise app screens&mdash;focusing on the navigation and the UI for adding expenses. As an added bonus, I used InVision Studio for the first time to implement my designs.
+                  </p>
                 </div>
               </div>
-            </a>
-          </div>
-          <!-- Packages End -->
-          <!-- Splitwise Start -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <a class="project animsition-link" href="split.html">
-              <figure>
-                <img src="images/projects/splitwise/split-thumb.jpg" alt="Splitwise App POC Redesign" class="img-fluid">
-              </figure>
-              <div class="project-hover">
-                <div class="project-hover-inner">
-                  <h2>Splitwise App Mock Redesign</h2>
-                  <span>View Project</span>
+              <div class="spacer"></div>
+              <p class="text-center"><img src="images/projects/splitwise/split-thumb.jpg" alt="Splitwise Redesign Project" class="img-fluid"></p>
+              <div class="spacer"></div>
+              <div class="row justify-content-center">
+                  <div class="col-lg-10">
+                    <p>Splitwise is a mobile app that allows users to total expenses between friends and automatically transfer payments. Though this app is very useful, I found issue with its usability and design. I used it for the first time a month ago for a friend's birthday trip and it definitely made it easier to split expenses within the group; however, I struggled with understanding exactly how to use the app. Therefore, I thought this would be an ideal mock project to further my app UX/UI design experience.</p>
+                    <p>To begin the process, I had a friend explore the Splitwise app (on an Android device) and had a set of questions for them as they did so. Some of the questions pertained to the navigation and others to the "add expense" screen. My friend offered the following feedback:<br>
+                      <blockquote><em>"When I clicked the home button, nothing happened&mdash;I was on the same page I was before. It was weird. The expense screen was very overwhelming. I didn't know what options were required."</em></blockquote>
+                    </p>
+                    <p>After receiving my friend's feedback, I began to sketch out some new designs for the app. One of the major issues I felt that needed to be addressed was the navigation. Splitwise technically doesn't have a "home" screen. Instead, when a user opens up the navigation and clicks on "home", the navigation is simply minimized and the user is on the same screen as before opening the navigation panel.</p>
+                  </div>
+                </div>
+              <div class="spacer"></div>
+              <div class="row align-items-center justify-content-center">
+                      <div class="col-lg-5 col-sm-12">
+                          <p class="text-center "><img src="images/projects/splitwise/split-1.jpg" alt="Splitwise Sketches" class="img-fluid"></p>
+                      </div>
+                  <div class="col-lg-5 col-sm-12">
+                      <p class="text-center "><img src="images/projects/splitwise/split-2.jpg" alt="Splitwise Wireframes" class="img-fluid"></p>
+                  </div>
+                  <div class="col-lg-10">
+                      <div class="spacer"></div>
+                      <p>In order to solve the navigation issue, I decided to create an actual "home" screen that would replace the current "activity" screen for the user and allow them to see all current expenses. This simplified the navigation and gave the "home" call-to-action in the menu navigation more of a purpose.</p>
+                  </div>
+                </div>
+              <div class="row align-items-center justify-content-center">
+                <div class="col-lg-10">
+                    <div class="spacer"></div>
+                    <p class="text-center "><img src="images/projects/splitwise/split-3.jpg" alt="Splitwise Comparison Side-by-Side" class="img-fluid"></p>
+                    <div class="spacer"></div>
+                    <p>Another issue that was addressed in my small scale usability test concerned the "add expense" screen. Even the opening animation for the screen seemed a little overwhelming. When I first clicked on the button to add an expense, I thought the app crashed because the animation was so jarring.</p>
+                    <p>Therefore, not only did I redesign the UI for this particular screen, but I also created a new micro-animation that softened the transition between the "add expense" screen and the rest of the app. Rather than have the "add expense" information open up in a diconnected new screen, my proposed design expands a bottom sheet to display that same information. This keeps that information more connected to the app experience by allowing visibility to the rest of the app behind a slight overlay.</p>
+                  </div>
+              </div>
+              <div class="spacer"></div>
+              <div class="row align-items-center justify-content-center">
+                      <div class="col-lg-5 col-sm-12">
+                          <p class="text-center "><img src="images/projects/splitwise/split-4.gif" alt="Current Splitwise Animation" class="img-fluid"></p>
+                      </div>
+                  <div class="col-lg-5 col-sm-12">
+                      <p class="text-center "><img src="images/projects/splitwise/split-5.gif" alt="Proposed Splitwise Animation" class="img-fluid"></p>
+                  </div>
+                </div>
+                <div class="spacer"></div>
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-10">
+                    <p>After I redesigned some of the Splitwise screens, I had my friend walk through a simple prototype and provide new feedback.</p>
+                    <blockquote><em>"I feel like it’s easier to add an expense now because everything is on its own line and I like that there is now a home screen because you have a nice, easy-to-follow overview of what people owe you and what you owe."</em></blockquote>
                 </div>
               </div>
-            </a>
-          </div>
-          <!-- Splitwise End -->
         </div>
-        <div class="row">
-            <!-- Experience Start -->
-            <div class="col-lg-6" data-aos="fade-up">
-              <a class="project animsition-link" href="experience.html">
-                <figure>
-                  <img src="images/projects/experience/experience_thumb.jpg" alt="Vivid Seats Experience Page" class="img-fluid">
-                </figure>
-                <div class="project-hover">
-                  <div class="project-hover-inner">
-                    <h2>Experience Page</h2>
-                    <span>View Project</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- Experience End -->
-            <!-- Innovation Start -->
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-              <a class="project animsition-link" href="innovation.html">
-                <figure>
-                  <img src="images/projects/innovation/innovation_thumb.jpg" alt="Innovation Day Project" class="img-fluid">
-                </figure>
-                <div class="project-hover">
-                  <div class="project-hover-inner">
-                    <h2>Innovation Day Project</h2>
-                    <span>View Project</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- Innovation End -->
-          </div>
-        <div class="row">
-          <!-- March Start -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-              <a class="project animsition-link" href="march.html">
-                <figure>
-                  <img src="images/projects/march/mm_thumb.png" alt="March Madness Page Redesign" class="img-fluid">
-                </figure>
-                <div class="project-hover">
-                  <div class="project-hover-inner">
-                    <h2>March Madness Page Redesign</h2>
-                    <span>View Project</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- March End -->
-          <!-- Capital Start  -->
-          <div class="col-lg-6" data-aos="fade-up">
-            <a class="project animsition-link" href="capital.html">
-              <figure>
-                <img src="images/projects/capital/savor_thumb.jpg" alt="Capital One Savor Card Landing Page" class="img-fluid">
-              </figure>
-              <div class="project-hover">
-                <div class="project-hover-inner">
-                  <h2>Capital One Partner Page</h2>
-                  <span>View Project</span>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!-- Capital End -->
-        </div>
-        <div class="row">
-          <!-- Cupcake Start -->
-          <div class="col-lg-6" data-aos="fade-up">
-              <a class="project animsition-link" href="cupcake.html">
-                <figure>
-                  <img src="images/projects/cupcake/cupcake_thumb.gif" alt="Cupcake Creator Project" class="img-fluid">
-                </figure>
-                <div class="project-hover">
-                  <div class="project-hover-inner">
-                    <h2>Cupcake Creator</h2>
-                    <span>View Project</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- Cupcake End -->
-          <!-- Mapbox Start -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-              <a class="project animsition-link" href="mapbox.html">
-                <figure>
-                  <img src="images/projects/mapbox/mapbox_thumb.jpg" alt="Mapbox MLB Map" class="img-fluid">
-                </figure>
-                <div class="project-hover">
-                  <div class="project-hover-inner">
-                    <h2>MLB Mapbox Map</h2>
-                    <span>View Project</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- Mapbox End -->
-          </div>
-          <div class="row">
-            <!-- Trans Start -->
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-              <a class="project animsition-link" href="trans.html">
-                <figure>
-                  <img src="images/projects/trans/trans_thumb.jpg" alt="Transactional Email Redesign" class="img-fluid">
-                </figure>
-                <div class="project-hover">
-                  <div class="project-hover-inner">
-                    <h2>Transactional Email Redesign</h2>
-                    <span>View Project</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- Trans End -->
-            <!-- Super Start -->
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                <a class="project animsition-link" href="super.html">
-                  <figure>
-                    <img src="images/projects/super/sb_thumb.png" alt="Super Bowl Ticket Prices Landing Page" class="img-fluid">
-                  </figure>
-                  <div class="project-hover">
-                    <div class="project-hover-inner">
-                      <h2>Super Bowl Landing Page</h2>
-                      <span>View Project</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!-- Super End -->
-          </div>
-          <div class="row">
-            <!-- Gift Start -->
-          <div class="col-lg-6" data-aos="fade-up">
-              <a class="project animsition-link" href="gift.html">
-                <figure>
-                  <img src="images/projects/gift/gift-card_thumb.jpg" alt="Gift Card Page Redesign" class="img-fluid">
-                </figure>
-                <div class="project-hover">
-                  <div class="project-hover-inner">
-                    <h2>Gift Card Page Redesign</h2>
-                    <span>View Project</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- Gift End -->
-            <!-- Timeline Start -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-              <a class="project animsition-link" href="timeline.html">
-                <figure>
-                  <img src="images/projects/timeline/timeline_thumb.jpg" alt="Vivid Seats Timeline Wall" class="img-fluid">
-                </figure>
-                <div class="project-hover">
-                  <div class="project-hover-inner">
-                    <h2>Timeline Wall</h2>
-                    <span>View Project</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- Timeline End -->
-            </div>  
-            <div class="row">
-               <!-- Festival Start -->
-            <div class="col-lg-6" data-aos="fade-up">
-                <a class="project animsition-link" href="festival.html">
-                  <figure>
-                    <img src="images/projects/festival/festivals-thumb.gif" alt="Festival Page Animation" class="img-fluid">
-                  </figure>
-                  <div class="project-hover">
-                    <div class="project-hover-inner">
-                      <h2>Festival Page Animations</h2>
-                      <span>View Project</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!-- Festival End -->
-<!-- Wedding Start -->
-<div class="col-lg-6" data-aos="fade-up">
-    <a class="project animsition-link" href="wedding.html">
-      <figure>
-        <img src="images/projects/wedding/wedding_thumb.jpg" alt="Wedding Invitations" class="img-fluid">
-      </figure>
-      <div class="project-hover">
-        <div class="project-hover-inner">
-          <h2>Wedding Invitations</h2>
-          <span>View Project</span>
-        </div>
-      </div>
-    </a>
-  </div>
-  <!-- Wedding End -->
 
-            </div>  
-      </div>
-    </section>
-    <!-- End Portfolio-->
-
-    <!-- Contact -->
-    <div id="contactSection" class="contact-section templateux-section templateux-cta mt-5" data-aos="fade-up">
-      <div class="container-fluid">
-        <div class="cta-inner">
-          <h2><span class="words-1">Email Me</span>
-            <span id="copyEmail" class="words-2 copy-email" onclick="copyToClipboard('#copyEmail')">jannonjeffries@gmail.com</span></h2>
-          <div id="copiedAlert" class="copied-alert">
-            <p>Copied to clipboard</p>
-          </div>
-        </div>  
-      </div>
-    </div>
-    <!-- End Contact -->
+      </section>
+  
+   <!-- End Project -->
 
     <footer class="templateux-footer">
       <div class="container-fluid">
@@ -381,9 +199,15 @@
 
   </div>
 
-
   <script src="js/scripts-all.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/cocoen.min.js"></script>
+  <script src="js/cocoen-jquery.min.js"></script>
+  <script>
+      $(function(){
+        $('.cocoen').cocoen();
+      });
+  </script>
 
 </body>
 
