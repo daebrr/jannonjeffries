@@ -233,22 +233,6 @@ function updateNavColors(sticky) {
     return $('body').hasClass('home-page');
     }
 
-    // Hide cohen class on mobile view
-
-   function mediaQuery(x) {
-        if (x.matches) { 
-          console.log('hello');
-          $('#cohenHideMobile').removeClass('.cohen')
-         } else {
-          $('#cohenHideMobile').addClass('.cohen');
-         }
-      }
-
-      var x = window.matchMedia('(max-width: 768px)')
-      mediaQuery(x) 
-      x.addListener(mediaQuery) 
-    
-
   
 
 
