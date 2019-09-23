@@ -1141,73 +1141,74 @@ textarea.form-control {
 
 // Image Before After
 
-$drag-colour: $light-blue-gray;
+@include media-breakpoint-up(sm) {
 
-.cocoen {
-  box-sizing: border-box;
-  cursor: pointer;
-  line-height: 0;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
-  position: relative;
-  user-select: none;
+	$drag-colour: $light-blue-gray;
 
-  * {
-    box-sizing: inherit;
+	.cocoen {
+		box-sizing: border-box;
+		cursor: pointer;
+		line-height: 0;
+		margin: 0;
+		overflow: hidden;
+		padding: 0;
+		position: relative;
+		user-select: none;
 
-    &::after,
-    &::before {
-      box-sizing: inherit;
-    }
-  }
+		* {
+			box-sizing: inherit;
 
-  img,
-  picture > img {
-    max-width: none;
-  }
+			&::after,
+			&::before {
+				box-sizing: inherit;
+			}
+		}
 
-  > img,
-  > picture > img {
-    display: block;
-    width: 100%;
-  }
+		img,
+		picture > img {
+			max-width: none;
+		}
 
-  > div {
-    &:first-child,
-    picture & {
-      height: 100%;
-      left: 0;
-      overflow: hidden;
-      position: absolute;
-      top: 0;
-      width: 50%;
-    }
-  }
+		> img,
+		> picture > img {
+			display: block;
+			width: 100%;
+		}
 
-  &-drag {
-    background: $drag-colour;
-    bottom: 0;
-    cursor: ew-resize;
-    left: 50%;
-    margin-left: -1px;
-    position: absolute;
-    top: 0;
-    width: 2px;
+		> div {
+			&:first-child,
+			picture & {
+				height: 100%;
+				left: 0;
+				overflow: hidden;
+				position: absolute;
+				top: 0;
+				width: 50%;
+			}
+		}
 
-    &::before {
-      border: 3px solid $drag-colour;
-      content: '';
-      height: 30px;
-      left: 50%;
-      margin-left: -7px;
-      margin-top: -18px;
-      position: absolute;
-      top: 50%;
-      width: 14px;
-    }
-  }
+		&-drag {
+			background: $drag-colour;
+			bottom: 0;
+			cursor: ew-resize;
+			left: 50%;
+			margin-left: -1px;
+			position: absolute;
+			top: 0;
+			width: 2px;
+
+			&::before {
+				border: 3px solid $drag-colour;
+				content: '';
+				height: 30px;
+				left: 50%;
+				margin-left: -7px;
+				margin-top: -18px;
+				position: absolute;
+				top: 50%;
+				width: 14px;
+			}
+		}
+	}
 }
-
-
  
