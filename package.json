@@ -10,7 +10,7 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "cocoen": "^2.0.5",
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.14.1"
   },
   "scripts": {
     "scss": "node-sass --watch scss -o css",

@@ -176,7 +176,7 @@ a {
 .hero, .intro {
   height: 70vh; }
   .hero h1, .intro h1 {
-    color: #a7797d;
+    color: #f4efea;
     font: 900 36px 'Playfair Display', serif; }
 
 .templateux-portfolio-overlap {
@@ -856,15 +856,3 @@ span.copy-email:hover {
         position: absolute;
         top: 50%;
         width: 14px; } }
-
-@media (max-width: 767.98px) {
-  .hide-desktop {
-    display: inherit; }
-  .hide-mobile {
-    display: none; } }
-
-@media (min-width: 576px) {
-  .hide-desktop {
-    display: none; }
-  .hide-mobile {
-    display: inherit; } }
