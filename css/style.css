@@ -290,6 +290,7 @@ a {
   position: relative;
   float: left;
   width: 100%;
+  max-width: 800px;
   margin-bottom: 30px; }
   .project figure, .post figure {
     margin: 0;
@@ -787,7 +788,8 @@ span.copy-email:hover {
 .templateux-hero {
   background: #6c8190; }
   .templateux-hero .project-intro {
-    height: 73vh; }
+    height: 73vh;
+    padding-bottom: 40px; }
     .templateux-hero .project-intro h1 {
       color: #c99297;
       font: 900 36px 'Playfair Display', serif; }
@@ -804,9 +806,25 @@ span.copy-email:hover {
         margin-bottom: 24px;
         padding-bottom: 12px; } }
 
+.hero-image {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); }
+
 .cupcake-how-to {
   max-width: 100%;
   height: auto; }
+
+.native-tour {
+  text-align: center; }
+  .native-tour figure {
+    background-color: #15326F; }
+    .native-tour figure img {
+      height: 100%; }
+      @media (min-width: 992px) {
+        .native-tour figure img {
+          height: 57%; } }
+      @media (min-width: 1200px) {
+        .native-tour figure img {
+          height: 80%; } }
 
 @media (min-width: 576px) {
   .cocoen {
@@ -817,7 +835,13 @@ span.copy-email:hover {
     overflow: hidden;
     padding: 0;
     position: relative;
-    user-select: none; }
+    user-select: none; } }
+  @media (min-width: 576px) and (min-width: 768px) {
+    .cocoen {
+      width: 800px;
+      margin: 0 auto; } }
+
+@media (min-width: 576px) {
     .cocoen * {
       box-sizing: inherit; }
       .cocoen *::after, .cocoen *::before {

@@ -441,6 +441,7 @@ a {
 	position: relative;
 	float: left;
 	width: 100%;
+	max-width: 800px;
 	margin-bottom: 30px;
 	figure {
 		margin: 0;
@@ -1106,6 +1107,7 @@ textarea.form-control {
 
 		.project-intro {
 		height: 73vh;
+		padding-bottom: 40px;
 
 		h1 {
 			color: $rose-gold;
@@ -1128,7 +1130,11 @@ textarea.form-control {
 		}
 
 	}
+	
+}
 
+.hero-image {
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, .1);
 }
 
 // Cupcake Project (And Innovation Day Project Video)
@@ -1138,6 +1144,30 @@ textarea.form-control {
     height: auto;
 }
 
+// Native tour thumbnail
+
+.native-tour {
+	text-align: center;
+
+figure {
+	
+	background-color: #15326F;
+
+	img {
+
+		height: 100%;
+
+		@include media-breakpoint-up(lg) {
+			height: 57%;
+		}
+
+		@include media-breakpoint-up(xl) {
+			height: 80%;
+		}
+
+		}	
+	}
+}
 
 // Image Before After
 
@@ -1154,6 +1184,11 @@ textarea.form-control {
 		padding: 0;
 		position: relative;
 		user-select: none;
+
+		@include media-breakpoint-up(md) {
+			width: 800px;
+			margin: 0 auto;
+		}
 
 		* {
 			box-sizing: inherit;
