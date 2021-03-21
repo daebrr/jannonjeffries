@@ -186,6 +186,9 @@ a {
     margin-top: -50px; }
   .templateux-portfolio-overlap p {
     color: #1d1d24; }
+  .templateux-portfolio-overlap p.image-caption {
+    color: #adb5bd;
+    font-size: 14px; }
   .templateux-portfolio-overlap p.special {
     color: #f4efea; }
   @media (max-width: 575.98px) {
