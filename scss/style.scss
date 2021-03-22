@@ -1144,10 +1144,6 @@ textarea.form-control {
 	// max-width: 800px;
 }
 
-// .secondary-hero-image {
-// 	max-width: 800px;
-// }
-
 // Cupcake Project (And Innovation Day Project Video)
 
 .cupcake-how-to {
@@ -1178,6 +1174,29 @@ figure {
 
 		}	
 	}
+}
+
+// Hide on mobile or desktop
+
+
+.mobile-only {
+
+	display: block;
+
+	@include media-breakpoint-up(lg) {
+		display: none;
+	}
+
+}
+
+.desktop-only {
+
+	display: block; 
+
+	@include media-breakpoint-down(md) {
+		display: none;
+	}
+
 }
 
 // General list styles
