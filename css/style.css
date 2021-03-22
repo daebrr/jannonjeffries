@@ -188,7 +188,8 @@ a {
     color: #1d1d24; }
   .templateux-portfolio-overlap p.image-caption {
     color: #adb5bd;
-    font-size: 14px; }
+    font-size: 14px;
+    margin: 0 auto; }
   .templateux-portfolio-overlap p.special {
     color: #f4efea; }
   @media (max-width: 575.98px) {
@@ -828,6 +829,9 @@ span.copy-email:hover {
       @media (min-width: 1200px) {
         .native-tour figure img {
           height: 80%; } }
+
+ul, li {
+  color: #1d1d24; }
 
 @media (min-width: 576px) {
   .cocoen {
