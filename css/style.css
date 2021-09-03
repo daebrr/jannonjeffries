@@ -172,9 +172,15 @@ a {
   .hero.overlay .lead {
     color: #f4efea;
     opacity: .5; }
+  .hero p.email-text, .hero a {
+    color: #f4efea; }
+  .hero a {
+    text-decoration: underline; }
+    .hero a:hover {
+      opacity: 50%; }
 
 .hero, .intro {
-  height: 70vh; }
+  height: 100%; }
   .hero h1, .intro h1 {
     color: #f4efea;
     font: 900 36px 'Playfair Display', serif; }
