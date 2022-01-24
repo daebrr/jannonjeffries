@@ -121,7 +121,7 @@ hr {
 }
 
 .project-image-large {
-	margin: 0 auto 24px;
+	margin: 16px auto 24px;
 	width: 100%;
 	max-width: 800px;
 	height: auto;
@@ -428,12 +428,13 @@ section.projects {
 	}
 
 	
-	h3, h4, p {
+	h3, p {
 		margin: 24px;
 	}
 
 	h4 {
 		color: $blue-gray;
+		margin: 24px 24px 0;
 	}
 
 
