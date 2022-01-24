@@ -221,7 +221,7 @@ section.projects {
     z-index: 10; }
 
 .house-rules {
-  background: url("images/projects/thumbnails/house-thumbnail.jpg") no-repeat center;
+  background: url("../images/projects/thumbnails/house-thumbnail.jpg") no-repeat center;
   background-size: cover;
   min-height: 200px;
   padding: 16px;
@@ -234,7 +234,7 @@ section.projects {
     -webkit-transition: all 0.2s ease-in-out; }
 
 .decline-flow {
-  background-image: url("images/projects/thumbnails/decline-thumbnail.jpg");
+  background-image: url("../images/projects/thumbnails/decline-thumbnail.jpg");
   background-size: cover;
   min-height: 200px;
   padding: 16px;
@@ -247,7 +247,7 @@ section.projects {
     -webkit-transition: all 0.2s ease-in-out; }
 
 .cancel-change {
-  background-image: url("images/projects/thumbnails/cancel-thumbnail.jpg");
+  background-image: url("../images/projects/thumbnails/cancel-thumbnail.jpg");
   background-size: cover;
   min-height: 200px;
   padding: 16px;
@@ -260,7 +260,7 @@ section.projects {
     -webkit-transition: all 0.2s ease-in-out; }
 
 .inbox {
-  background-image: url("images/projects/thumbnails/inbox-thumbnail.jpg");
+  background-image: url("../images/projects/thumbnails/inbox-thumbnail.jpg");
   background-size: cover;
   min-height: 200px;
   padding: 16px;
