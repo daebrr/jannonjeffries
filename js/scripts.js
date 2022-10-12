@@ -137,3 +137,43 @@ $(document).ready(function () {
     $("#inboxOpened").addClass("hide");
   });
 });
+
+
+// Flow Builder functions
+
+$(document).ready(function () {
+  $("#flowBuilderClosed").click(function () {
+    $("#flowBuilderOpened").removeClass("hide");
+    $("#flowBuilderOpened .lightbox_content").scrollTop(0);
+  });
+  $(".project-name").click(function () {
+    $("#flowBuilderOpened").removeClass("hide");
+    $("#flowBuilderOpened .lightbox_content").scrollTop(0);
+  });
+  $(".close").click(function () {
+    $("#flowBuilderOpened").addClass("hide");
+  });
+  $(".back-to-projects").click(function () {
+    $("#flowBuilderOpened").addClass("hide");
+  });
+});
+
+
+// Variant functions
+
+$(document).ready(function () {
+  $("#variantClosed").click(function () {
+    $("#variantOpened").removeClass("hide");
+    $("#variantOpened .lightbox_content").scrollTop(0);
+  });
+  $(".project-name").click(function () {
+    $("#variantOpened").removeClass("hide");
+    $("#variantOpened .lightbox_content").scrollTop(0);
+  });
+  $(".close").click(function () {
+    $("#variantOpened").addClass("hide");
+  });
+  $(".back-to-projects").click(function () {
+    $("#variantOpened").addClass("hide");
+  });
+});
