@@ -384,3 +384,23 @@ section.projects {
   float: right; }
   .close:hover {
     cursor: pointer; }
+
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  gap: 16px;
+  flex-direction: row; }
+  @media only screen and (max-width: 768px) {
+    .row {
+      flex-wrap: wrap; } }
+  .row .column {
+    width: calc(100% / 2); }
+    @media only screen and (max-width: 768px) {
+      .row .column {
+        width: 100%; } }
+    .row .column.large-image-container {
+      margin-top: 24px; }
+      @media only screen and (max-width: 768px) {
+        .row .column.large-image-container {
+          margin-top: 0; } }
