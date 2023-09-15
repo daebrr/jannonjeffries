@@ -100,7 +100,7 @@ hr {
 
 .small-image-container {
   column-count: 2;
-  column-gap: 16px;
+  column-gap: 24px;
   text-align: center;
   margin: 8px 24px 0;
   height: auto; }
@@ -194,26 +194,37 @@ section.about {
   animation: Shine 15s ease infinite; }
 
 section.projects {
-  margin: 48px 16px;
-  column-count: 2;
-  column-gap: 16px; }
-  @media only screen and (max-width: 414px) {
-    section.projects {
-      column-count: 1;
-      column-gap: 0; } }
+  margin: 48px 16px; }
+  section.projects .projects-row {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 16px;
+    margin-bottom: 16px;
+    flex-direction: row; }
+    @media only screen and (max-width: 768px) {
+      section.projects .projects-row {
+        flex-wrap: wrap; } }
   section.projects .project-wrapper {
+    box-sizing: border-box;
+    width: calc(100% / 2);
     margin-bottom: 16px;
     color: white;
     min-height: 200px;
     border-radius: 12px;
+    outline: 1px solid #d1d5dc;
+    outline-offset: -1px;
     z-index: 1;
     overflow: hidden; }
-    section.projects .project-wrapper:hover .project-name {
-      background-color: #FC837C;
-      color: #1d1d24; }
+    @media only screen and (max-width: 768px) {
+      section.projects .project-wrapper {
+        width: 100%; } }
+    section.projects .project-wrapper:hover {
+      outline: 3px solid #6c8190; }
   section.projects .project-name {
     color: white;
     background-color: #101540;
+    opacity: 90%;
     border-radius: 8px;
     padding: 8px 12px;
     margin: 16px;
@@ -293,6 +304,32 @@ section.projects {
   overflow: hidden;
   -webkit-transition: all 0.2s ease-in-out; }
   .variant:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.25, 1.25);
+    transform: scale(1.25, 1.25);
+    -webkit-transition: all 0.2s ease-in-out; }
+
+.versioning {
+  background-image: url("../images/projects/thumbnails/versioning-thumbnail.jpg");
+  background-size: cover;
+  min-height: 200px;
+  padding: 16px;
+  overflow: hidden;
+  -webkit-transition: all 0.2s ease-in-out; }
+  .versioning:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.25, 1.25);
+    transform: scale(1.25, 1.25);
+    -webkit-transition: all 0.2s ease-in-out; }
+
+.workshops {
+  background-image: url("../images/projects/thumbnails/workshops-thumbnail.jpg");
+  background-size: cover;
+  min-height: 200px;
+  padding: 16px;
+  overflow: hidden;
+  -webkit-transition: all 0.2s ease-in-out; }
+  .workshops:hover {
     cursor: pointer;
     -webkit-transform: scale(1.25, 1.25);
     transform: scale(1.25, 1.25);

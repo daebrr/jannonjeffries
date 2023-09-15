@@ -133,7 +133,7 @@ hr {
 
 .small-image-container {
 	column-count: 2;
-	column-gap: 16px;
+	column-gap: 24px;
 	text-align: center;
 	margin: 8px 24px 0;
 	height: auto;
@@ -283,33 +283,45 @@ section.about {
 
 section.projects {
 	margin: 48px 16px;
-	column-count: 2;
-	column-gap: 16px;
 
-	@media only screen and (max-width: 414px) {
-		column-count: 1;
-		column-gap: 0;
+	.projects-row {
+		display: flex;
+		flex-wrap: nowrap;
+		width: 100%;
+		gap: 16px;
+		margin-bottom: 16px;
+		flex-direction: row;
+		@media only screen and (max-width: 768px) {
+			flex-wrap: wrap;
+		}
 	}
 
 	.project-wrapper {
+		box-sizing: border-box;
+		width: calc(100% / 2);
 		margin-bottom: 16px;
 		color: $white;
 		min-height: 200px;
 		border-radius: 12px;
+		outline: 1px solid $light-blue-gray;
+		outline-offset: -1px;
 		z-index: 1;
 		overflow: hidden;
 
+		@media only screen and (max-width: 768px) {
+			width: 100%;
+		}
+
 		&:hover {
-			.project-name {
-				background-color: $rose;
-				color: $black;
-			}
+
+			outline: 3px solid $blue-gray;
 		}
 	}
 
 	.project-name {
 		color: $white;
 		background-color: $purple;
+		opacity: 90%;
 		border-radius: 8px;
 		padding: 8px 12px;
 		margin: 16px;
@@ -402,6 +414,38 @@ section.projects {
 
 .variant {
 	background-image: url("../images/projects/thumbnails/variant-thumbnail.jpg");
+	background-size: cover;
+	min-height: 200px;
+	padding: 16px;
+	overflow: hidden;
+	-webkit-transition: all 0.2s ease-in-out;
+
+	&:hover {
+		cursor: pointer;
+		-webkit-transform: scale(1.25, 1.25);
+		transform: scale(1.25, 1.25);
+		-webkit-transition: all 0.2s ease-in-out;
+	}
+}
+
+.versioning {
+	background-image: url("../images/projects/thumbnails/versioning-thumbnail.jpg");
+	background-size: cover;
+	min-height: 200px;
+	padding: 16px;
+	overflow: hidden;
+	-webkit-transition: all 0.2s ease-in-out;
+
+	&:hover {
+		cursor: pointer;
+		-webkit-transform: scale(1.25, 1.25);
+		transform: scale(1.25, 1.25);
+		-webkit-transition: all 0.2s ease-in-out;
+	}
+}
+
+.workshops {
+	background-image: url("../images/projects/thumbnails/workshops-thumbnail.jpg");
 	background-size: cover;
 	min-height: 200px;
 	padding: 16px;

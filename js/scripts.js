@@ -1,33 +1,31 @@
-
 function passWord() {
   var testV = 1;
-  var pass1 = prompt('Please Enter Your Password', ' ');
-  var projects = document.getElementById('projects');
-  var bodyBackground = document.getElementById('bodyBackground');
-  var button = document.getElementById('button');
-  var about = document.getElementById('about');
+  var pass1 = prompt("Please Enter Your Password", " ");
+  var projects = document.getElementById("projects");
+  var bodyBackground = document.getElementById("bodyBackground");
+  var button = document.getElementById("button");
+  var about = document.getElementById("about");
 
   while (testV < 3) {
-    if (!pass1)
-      history.go(-1);
+    if (!pass1) history.go(-1);
     if (pass1.toLowerCase() == "jlj1203!") {
-      alert('You can now view Jannon\'\s projects');
+      alert("You can now view Jannon's projects");
 
       // window.open('protectpage.html');
-      projects.classList.remove('hide');
-      bodyBackground.classList.remove('body-background');
-      about.classList.add('new-background');
-      button.classList.add('hide');
-
+      projects.classList.remove("hide");
+      bodyBackground.classList.remove("body-background");
+      about.classList.add("new-background");
+      button.classList.add("hide");
 
       break;
     }
     testV += 1;
-    var pass1 =
-      prompt('Access Denied - Password Incorrect, Please Try Again.', 'Password');
+    var pass1 = prompt(
+      "Access Denied - Password Incorrect, Please Try Again.",
+      "Password"
+    );
   }
-  if (pass1.toLowerCase() != "password" & testV == 3)
-    history.go(-1);
+  if ((pass1.toLowerCase() != "password") & (testV == 3)) history.go(-1);
   return " ";
 }
 
@@ -36,27 +34,33 @@ function passWord() {
 $(document).ready(function () {
   $("#resume").hover(
     function () {
-      $("#resumeIcon").removeClass("material-icons").addClass("material-icons-outlined");
+      $("#resumeIcon")
+        .removeClass("material-icons")
+        .addClass("material-icons-outlined");
     },
     function () {
-      $("#resumeIcon").removeClass("material-icons-outlined").addClass("material-icons");
+      $("#resumeIcon")
+        .removeClass("material-icons-outlined")
+        .addClass("material-icons");
     }
   );
   $("#email").hover(
     function () {
-      $("#emailIcon").removeClass("material-icons").addClass("material-icons-outlined");
+      $("#emailIcon")
+        .removeClass("material-icons")
+        .addClass("material-icons-outlined");
     },
     function () {
-      $("#emailIcon").removeClass("material-icons-outlined").addClass("material-icons");
+      $("#emailIcon")
+        .removeClass("material-icons-outlined")
+        .addClass("material-icons");
     }
   );
 });
 
-
 // Lightbox
 
 // House rules functions
-
 
 $(document).ready(function () {
   $("#houseRulesClosed").click(function () {
@@ -75,7 +79,6 @@ $(document).ready(function () {
   });
 });
 
-
 // Decline flow functions
 
 $(document).ready(function () {
@@ -92,11 +95,8 @@ $(document).ready(function () {
   });
   $(".back-to-projects").click(function () {
     $("#declineFlowOpened").addClass("hide");
-
   });
-
 });
-
 
 // Cancel change functions
 
@@ -115,9 +115,7 @@ $(document).ready(function () {
   $(".back-to-projects").click(function () {
     $("#cancelChangeOpened").addClass("hide");
   });
-
 });
-
 
 // Inbox functions
 
@@ -138,7 +136,6 @@ $(document).ready(function () {
   });
 });
 
-
 // Flow Builder functions
 
 $(document).ready(function () {
@@ -158,7 +155,6 @@ $(document).ready(function () {
   });
 });
 
-
 // Variant functions
 
 $(document).ready(function () {
@@ -175,5 +171,35 @@ $(document).ready(function () {
   });
   $(".back-to-projects").click(function () {
     $("#variantOpened").addClass("hide");
+  });
+});
+
+// Versioning functions
+
+$(document).ready(function () {
+  $("#versioningClosed").click(function () {
+    $("#versioningOpened").removeClass("hide");
+    $("#versioningOpened .lightbox_content").scrollTop(0);
+  });
+  $(".close").click(function () {
+    $("#versioningOpened").addClass("hide");
+  });
+  $(".back-to-projects").click(function () {
+    $("#versioningOpened").addClass("hide");
+  });
+});
+
+// Workshops functions
+
+$(document).ready(function () {
+  $("#workshopsClosed").click(function () {
+    $("#workshopsOpened").removeClass("hide");
+    $("#workshopsOpened .lightbox_content").scrollTop(0);
+  });
+  $(".close").click(function () {
+    $("#workshopsOpened").addClass("hide");
+  });
+  $(".back-to-projects").click(function () {
+    $("#workshopsOpened").addClass("hide");
   });
 });
