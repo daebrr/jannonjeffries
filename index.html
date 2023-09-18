@@ -95,13 +95,13 @@
       <div class="project-lightbox-content">
         <h2>Automation Flow Versioning</h2>
         <h3>Overview</h3>
-        <p>Postscript, an SMS marketing platform, allows merchants to send automated messages (called automation flows) to their customers. Recently, new functionality has been added that allows merchant to see previous versions of their flows.</p>
+        <p>Postscript, an SMS marketing platform, allows merchants to send automated messages (called automation flows) to their customers. Recently, new functionality has been added that allows merchants to see previous versions of their flows.</p>
         <hr>
         <h3>Problem</h3>
-        <p>On average, 178 SMS merchants edit their automation flows every week. However, sometimes these edits result in a negative impact to their revenue, so merchants end up wanting to revert their changes. Up until recently, there was no way for merchants to revert their changes and also no easy way to compare analytics to previous automation versions. This lack of functionality left merchants frustrated.</p>
+        <p>On average, 178 SMS merchants edit their automation flows every week. However, sometimes these edits result in a negative impact to their revenue, so merchants end up wanting to revert their changes. Up until recently, there was no way for merchants to revert their changes and also no easy way to compare analytics to previous automation versions. This lack of functionality not only led to frustration for Postscript customers, but prevented prospects from switching to Postscript from competitor platforms (that did provide this fucntionality).</p>
         <hr>
         <h3>Original experience</h3>
-        <p>The original experience for automation flows only showcased the most up-to-date version of a flow along with its unique analytics</p>
+        <p>The original experience for automation flows only showcased the most up-to-date version of a flow along with its unique analytics.</p>
         <div class="large-image-container">
           <img class="project-image-large" src="images/projects/versioning/2_original.jpg"
             alt="Original automation flow experience">
@@ -111,15 +111,15 @@
         <ul>
           <li>Feedback via Customers and Customer Success Managers
             <ul>
-              <li>“They are frustrated they cannot see past data on old edits of automations. They feel this is key to their ability to test. They saw this is an option in legacy automations and really liked that feature, but I told them some of what they are doing in FB is not available in legacy. Worth the 4ish minute snippet listen above.” (A Customer Success Manager talking about their customer)</li>
+              <li>“They are frustrated they cannot see past data on old edits of automations. They feel this is key to their ability to test.” (A Customer Success Manager talking about their customer)</li>
             </ul>
           </li>
-          <li>Customer calls with merchants
+          <li>Customer Interviews
             <ul>
               <li>While on a call with at least one customer, the customer noted that they had provided (recent) feedback to their CSM about wanting the ability to review data from previous versions of automation flows. (They were manually tracking their edits at the time of the call.)</li>
             </ul>
           </li>
-          <li>
+          <li>Amplitude Data
             <ul>
               <li>On average, a shop can have up to 24 versions of a single automation flow.</li>
               <li>178 SMS merchants are updating their automations on a weekly basis. </li>
@@ -135,7 +135,7 @@
         </ul>
         <hr>
         <h3>Process</h3>
-        <p>As the lead product designer on the project, I worked closely with a Product Manager, digging into analogous research and customer feedback. I created several different mock-ups and shared them with my team for feedback. Upon receiving feedback from Product, Engineering, and other designers, I continued to iterate until I felt the designs were in a polished enough state for usability testing.</p>
+        <p>As the lead Product Designer on the project, I worked closely with a Product Manager, digging into analogous research and customer feedback. I created several different mock-ups and shared them with my team for feedback. Upon receiving feedback from Product, Engineering, and other designers, I continued to iterate until I felt the designs were in a polished enough state for usability testing.</p>
         <div class="large-image-container">
           <img class="project-image-large" src="images/projects/versioning/3_ideation.jpg"
             alt="Figma file with iterations and team comments">
@@ -161,61 +161,82 @@
           </li>
         </ul>
         <div class="large-image-container">
+          <img class="project-image-large" src="images/projects/versioning/5_testing2.jpg"
+            alt="Heatmap of first clicks in the UsabilityHub study">
+            <div class="note center">
+              <p>(Above) A heatmap displaying first clicks for the prototype</p>
+            </div>        </div>
+       
+        <p>Initially, I was concerned with how many participants would struggle to locate the version history drawer. (Version history could be accessed via an overflow button in the top right corner. This placement seemed to be a standard pattern across other versioning functionality in applications like Google Docs.) Most misclicks did occur during this initial step; however, all participants were able to discover the version history drawer and successfully complete the task.</p>
+        <div class="large-image-container">
           <img class="project-image-large image-border" src="images/projects/versioning/4_testing1.jpg"
             alt="UsabilityHub test showcasing the overflow button where test participants could find version history">
         </div>
-        <div class="large-image-container">
-          <img class="project-image-large" src="images/projects/versioning/5_testing2.jpg"
-            alt="Heatmap of first clicks in the UsabilityHub study">
-        </div>
-        <p>Initially, I was concerned with how many participants would struggle to locate the version history drawer. (Version history could be accessed via an overflow button in the top right corner. This placement seemed to be a standard pattern across other versioning functionality in applications like Google Docs.) Most misclicks did occur during this initial step; however, all participants were able to discover the version history drawer and successfully complete the task.</p>
-        <p>I had 4 internal Message Strategists walk through a prototype, identifying key differences in the different automation versions. All 4 participants easily navigated through the prototype and correctly accounted for the flow changes.</p>
+        <div class="note center">
+          <p>(Above) Prototype from external usability test</p>
+        </div> 
+
+        <p>In addition to the external test, I had 4 internal Messaging Strategists walk through a prototype, identifying key differences in the multiple automation versions. All 4 participants easily navigated through the prototype and correctly accounted for the flow changes.</p>
         <div class="large-image-container">
           <img class="project-image-large image-border" src="images/projects/versioning/6_testing3.jpg"
             alt="Internal usability test conducted with messaging strategists">
         </div>
-        <p>One interesting point discussed in the internal feedback was around the “Changes” details in the versioning drawer. One strategist thought it would be ideal if the changes could be automated, so the system could record the changes and populate them in the section without an individual having to manually record them. (This idea unfortunately didn't make the cut for the initial feature release, but it's something the team will be looking into at a later time.)</p>
+        <div class="note center">
+          <p>(Above) Prototype from internal usability test</p>
+        </div>
+        <p>One interesting point discussed in the internal feedback was around the “Changes” in the version history drawer. One strategist asked if the changes could be automated, so the system could record the changes and populate them in the section without an individual having to manually record them. (This idea unfortunately didn't make the cut for the initial feature release, but it's something the team will be looking into at a later time.)</p>
         <hr>
         <h3>New designs</h3>
-        <p>The final design was very similar to what was tested via the usability tests...
-        </p>
+        <p>When a merchant makes changes to their automation, they are prompted to confirm their changes and add details regarding what changed.</p>
         <div class="large-image-container">
           <img class="project-image-large image-border" src="images/projects/versioning/7_final1.jpg"
             alt="A merchant adding a description for their changes">
+        </div> <div class="note center">
+          <p>(Above) A feature where a merchant can document their flow changes</p>
         </div>
-        <p>When a merchant makes changes to their automation, they are prompted to confirm their changes and add details regarding what changed.</p>
-        <div class="large-image-container">
-          <img class="project-image-large image-border" src="images/projects/versioning/1.8_final2.jpg"
-            alt="Version history drawer with a previous automation flow selected">
-        </div>
-        <ul>
-<li>There is a button at the top right corner of an automation flow that opens the version history drawer.
+       
+There is a button at the top right corner of an automation flow that opens the version history drawer.
 <ul>
-  <li>A merchant also has the ability to restore a previous version if they wanted to revert their changes or found that a previous version was performing better than the current version. (A “Duplicate as New Flow” action will also be added in the future.)</li>
+  <li>A merchant also has the ability to restore a previous version if they want to revert their changes or find that a previous version performed better than the current version. (A “Duplicate as New Flow” action will also be added in the future.)</li>
 </li>
 <li>  Once the version history drawer is open, a merchant can select an individual version they'd like to view, and the preview on the left side of the screen will update accordingly.
 </li>
 </ul>
+<div class="large-image-container">
+  <img class="project-image-large image-border" src="images/projects/versioning/1.8_final2.jpg"
+    alt="Version history drawer with a previous automation flow selected">
+</div>
+<div class="note center">
+  <p>(Above) When a merchant selects a previous version and the preview updates</p>
+</div>
+        <p>While the mock-ups above were what was originally envisioned, there were some limitations our team had to address concerning the drawer UI. Working closely with a FE Engineer, we discovered that a drawer spanning the full height of the screen was not possible due to the page layout component our engineers leverage.</p>
 
-</li>
-        </ul>
         <div class="large-image-container">
           <img class="project-image-large image-border" src="images/projects/versioning/9_final3.jpg"
             alt="Version history design implemented by engineers">
         </div>
-        <p>While the previous mock-ups were what was originally envisioned, there were some limitations our team had to address concerning the drawer UI. Working closely with a FE engineer, we discovered that a drawer that spanned the full height of the screen was not possible due to the page layout component our company leverages. We went back and forth on how to solve for this limitation and we eventually landed on the decision to reuse a pre-existing UI container component that sits within the flow grid view. While this does significantly limit the space of the version history drawer, we were able to reduce some of the initial vertical space in the data cards to maximize what a merchant could see while the drawer was opened.</p>
+        <div class="note center">
+          <p>(Above) The currently implemented version history drawer design</p>
+        </div>
+
+          <p>We went back and forth on how to solve for this limitation and we eventually landed on the decision to reuse a pre-existing UI container component that sits within the flow grid view. While this does significantly limit the space of the version history drawer, we were able to reduce some of the initial vertical space in the data cards to maximize what a merchant could see while the drawer was opened.</p>
+        
+      
+        <p>Post-release, we also received feedback from our CTO. Despite the average number of versions for a single automation being under 30, our CTO wanted us to account for scalability in order to not overload the database in the future. After mocking up several different options and getting feedback from the design team, I landed on a skeleton loading state in order to decrease "users' perception of a long loading time" (<a class="inline-link" target="_blank" href="https://www.nngroup.com/articles/skeleton-screens/#Animated%20Skeleton%20Screens">Nielsen Norman Group</a>, 2023).  Once 20 automation flows are loaded, we seamlessly load another 20 automation flows into the drawer as a merchant is scrolling. </p>
         <div class="large-image-container">
           <img class="project-image-large image-border" src="images/projects/versioning/10_loading.jpg"
             alt="Loading state explorations for version history drawer">
         </div>
-        <p>Post-release, we also received some feedback from our CTO. Despite the number of versions for a single automation being under 30, our CTO wanted us to account for scalability in order to not overload the database in the future. This led me to design a skeleton loading state for the version history drawer, so that once 20 automations were loaded, we could seamlessly load another 20 automation into the drawer as a merchant was scrolling. </p>
+        <div class="note center">
+          <p>(Above) Different iterations for how to display the drawer's loading state</p>
+        </div>
         <hr>
         <h3>Objectives follow-up</h3>
-        <p>After the new version history functionality was released to 100% of customers, we've seen on average the version history drawer accessed 50+ times in any given week. We've also seen ~5% of merchants who access the drawer use the "Restore Version" functionality in order to optimize their automations based on success metrics like revenue and orders.
+        <p>After the new version history functionality was released to 100% of customers, we saw the version history drawer accessed 50+ times on average in any given week. We've also seen that ~5% of merchants who access the drawer use the "Restore Version" functionality in order to optimize their automations based on success metrics (like revenue and orders).
         </p>
         <hr>
         <h3>Next steps</h3>
-        <p>The next steps for expanding on version history functionality include adding a duplication action for a flow and automating the description creation when a change is made to an automation flow.</li>
+        <p>The next steps for expanding on the version history functionality include adding a duplication action for an automation flow and automating the description creation when a change is made to an automation flow.</li>
         </p>
         <br><br>
         <div class="button-container">
@@ -241,54 +262,76 @@
       <p>There were several instances in the last year where the Flow Builder team leveraged the use of workshops in order to achieve a goal. Having led several sessions, I wanted to highlight a few important ones.</p>
       <hr>
       <h3>Why workshop?</h3>
-      <p>Workshops are used to solve important problems and generate ideas in a highly collaborate way. While similar outcomes can sometimes be achieved by an individual, including a group or team in the process can generate more and often better ideas. It is because of this reason that I led the Flow Builder team through two important workshops during 2023.</p>
+      <p>Workshops are used to solve important problems and generate ideas in a highly collaborate way. While similar outcomes can sometimes be achieved by an individual, including a group or team in the process can generate more and often better ideas. It is because of this reason that I led the Flow Builder team through two important workshops in 2023.</p>
       <hr>
       <h3>Flow Builder Navigability Workshop</h3>
       <div class="row">
       <div class="column">
-        <p>Unfortunately, our team didn't have a ton of bandwidth for a complex fix; therefore, I proposed that the team could use a post-up exercise for generating possible solutions.</p>
-        <p>The first workshop I led was in response to internal feedback about a navigability issue in Flow Builder. (See gif) There were some known spacing issues inside of the Flow Builder tool; however, the issues were amplified after a recent feature release. These spacing issues made it extremely difficult for individuals to navigate the Flow Builder tool.</p>
+        <p>The first workshop I led was in response to internal feedback about a navigability issue in Flow Builder. There were some known spacing issues inside of the Flow Builder tool; however, the issues were amplified after a recent feature release. These spacing issues made it extremely difficult for individuals to navigate Flow Builder.</p>
+        <p>Unfortunately, our team didn't have the bandwidth for a complex solution; therefore, I proposed that we try a <a target="_blank" class="inline-link" href="https://www.nngroup.com/articles/workshop-activities/#articleBody">post-up</a> exercise to generate possible solutions.</p>
       </div>
       <div class="large-image-container column">
         <img class="project-image-small image-border" src="images/projects/workshops/1.gif"
           alt="A gif demonstrating the spacing issue within the Flow Builder tool">
+          <div class="note center">
+            <p>(Above) A video sent from an internal stakeholder</p>
+          </div>
       </div>
+    
      </div>
       
+      <p>During the post-up exercise, each team member had a set amount of time to generate ideas on their own. Next, we sorted the ideas into broader categories and took additional time to vote on the post-its or categories that resonated the most with us. After voting, we discussed the ideas with the most votes.</p>
       <div class="large-image-container">
         <img class="project-image-large image-border" src="images/projects/workshops/2_nav1.jpg"
           alt="Figjam with post-up activity to brainstorm improvements to navigation in Flow Builder">
       </div>
-      <p>During the post-up exercise, each team member had a set amount of time to generate ideas on their own. Next, we sorted the ideas into broader categories and took additional time to vote on the post-its or categories that resonated most with us. After voting, we discussed the ideas with the most votes.</p>
+      <div class="note center">
+        <p>(Above) The Figjam our team used to brainstorm ideas</p>
+      </div>
+    
+   <p>Lastly, after the brainstorming session, I placed the most-voted on ideas in an Impact Effort Matrix. I then moved post-its around according to team feedback.</p>
+      
       <div class="large-image-container">
         <img class="project-image-large image-border" src="images/projects/workshops/3_nav2.jpg"
           alt="Impact Effort matrix that idenitifies which projects the team can easily tackle for the greatest impact">
       </div>
-   <p>Lastly, after the brainstorming session, I placed the most-voted on ideas in an Impact Effort Matrix. I then moved post-its around according to team feedback.</p>
-      <p>Based on the workshop outcomes, the team was able to prioritize items that would create the most impact for the least amount of effort. One of these items included introducing a mini-map to Flow Builder. As it turned out, the mini-map could be easily added to Flow Builder through the flow react library the team was already leveraging.</p>
-      
-      
-      
-      <p>After introducing this mini-map, internal and external feedback concerning the navigability of Flow Builder has been reduced by 100%.</p>
+      <div class="note center">
+        <p>(Above) A matrix that organized the team's ideas based on effort and impact</p>
+      </div>
+      <p>Based on the workshop outcomes, the team was able to prioritize items that would create the most impact for the least amount of effort. One of these items included introducing a mini-map in Flow Builder. The workshop exercise helped reveal that the flow react library the team leverages for Flow Builder actually has a built-in option to add a mini-map. Therefore, very little effort was required to make the update.</p>
       <div class="large-image-container">
         <img class="project-image-large image-border" src="images/projects/workshops/4_nav3.jpg"
           alt="The final implementation for the minimap within Flow Builder">
       </div>
-      
+      <div class="note center">
+        <p>(Above) The implemented mini-map</p>
+      </div>
+      <p>After introducing the mini-map, internal and external feedback concerning the navigability of Flow Builder was reduced by 99%.</p>
+
       
       <hr>
       <h3>General Flow Builder Improvement Workshop</h3>
-<p>Working for a remote company doesn't introduce many opportunities to work with others in person; however, the Flow Builder team was fortunate enough to meet up in person for a few days. During this time, we spent an hour and a half brainstorming ideas that individual team members had to improve the Flow Builder experience.</p>
-<p>Similar to the navigability workshop, this workshop focused on first generating individual ideas and then coming back together for a discussion. One facet of this session that was different though was the introduction of “won't do” section. Instead of only generating ideas that the team thought would improve Flow Builder, team members also had the opportunity push back on ideas that were already in our backlog or roadmap. While this section didn't get overly utilized during the workshop, the team had a few concerns to share with a couple backlog items.</p>      
+<p>Working for a remote company doesn't introduce many opportunities to work with others in person; however, the Flow Builder team was fortunate enough to meet up in person for a few days in August, 2023. During this time, we spent an hour and a half brainstorming ideas that individual team members had to improve the Flow Builder experience.</p>
 <div class="large-image-container">
   <img class="project-image-large image-border" src="images/projects/workshops/5_gen1.jpg"
     alt="Figjam exercise for choosing projects the engineers want to prioritize">
 </div>
-<p>After generating ideas and voting on them, the team came together to discuss the ideas that received the most votes. These items ranged from ideas that were strictly BE initiatives to items that were purely related to the content we surface in-app. Once we walked through all the ideas, I again created an Impact Effort Matrix and shared it with the team. (During our in-person collaboration time, we also ideated on ways to leverage AI/ML within Flow Builder. Those items were added to the matrix as well.)</p>
+<div class="note center">
+  <p>(Above) The Figjam prompt for the workshop</p>
+</div>
+
+
+<p>Similar to the navigability workshop, this workshop focused on first generating individual ideas and then coming back together for a group discussion. One unique facet of this session was the introduction of a “won't do” section. Instead of only generating ideas that the team thought would improve Flow Builder, team members also had the opportunity to push back on ideas that were already in our backlog or roadmap. While this section didn't get overly utilized during the workshop, the team had a few concerns to share about a couple backlog items.</p>     
 <div class="large-image-container">
   <img class="project-image-large image-border" src="images/projects/workshops/6_gen2.jpg"
     alt="Impact Effort matrix for projects to prioritize according to engineering feedback">
 </div>
+<div class="note center">
+  <p>(Above) General ideas and ideas related to AI enhancements organized into a matrix</p>
+</div> 
+
+<p>After generating ideas and voting on them, the team came together to discuss the ideas that received the most votes. These items ranged from ideas that were strictly BE initiatives to items that were purely related to the content we surface in-app. Once we walked through all the ideas, I again created an Impact Effort Matrix and shared it with the team. (During our in-person collaboration time, we also ideated on ways to leverage AI/ML within Flow Builder. Those items were added to the matrix as well.)</p>
+
 
 <p>Once the Flow Builder team helped to properly organize the matrix, the Product Manager, Engineering Manager, and myself reviewed and added some of the items to our stretch goals for Q4 in 2023. One proposed project (updating the message builder 3rd party library) even made it onto the Q4 roadmap as a priority rather than a stretch goal.</p>
 <br><br>

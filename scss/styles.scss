@@ -193,6 +193,7 @@ h1 {
 	 p {
 		 color: $blue-gray;
 		 font-size: 14px;
+		 margin-top: 0!important;
 	 }
 	 
 }
@@ -559,8 +560,15 @@ section.projects {
 			}
 
 		}
+
+		p:last-child {
+			margin-bottom: 0;
+		}
 	}
 
 
 }
 
+.inline-link {
+	color: $black;
+}
