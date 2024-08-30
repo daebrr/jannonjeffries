@@ -44,18 +44,18 @@ $(document).ready(function () {
         .addClass("material-icons");
     }
   );
-  $("#email").hover(
-    function () {
-      $("#emailIcon")
-        .removeClass("material-icons")
-        .addClass("material-icons-outlined");
-    },
-    function () {
-      $("#emailIcon")
-        .removeClass("material-icons-outlined")
-        .addClass("material-icons");
-    }
-  );
+  // $("#email").hover(
+  //   function () {
+  //     $("#emailIcon")
+  //       .removeClass("material-icons")
+  //       .addClass("material-icons-outlined");
+  //   },
+  //   function () {
+  //     $("#emailIcon")
+  //       .removeClass("material-icons-outlined")
+  //       .addClass("material-icons");
+  //   }
+  // );
 });
 
 // Lightbox
