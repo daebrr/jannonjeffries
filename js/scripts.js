@@ -203,3 +203,33 @@ $(document).ready(function () {
     $("#workshopsOpened").addClass("hide");
   });
 });
+
+// Infinity testing
+
+$(document).ready(function () {
+  $("#infinityTestingClosed").click(function () {
+    $("#infinityTestingOpened").removeClass("hide");
+    $("#infinityTestingOpened .lightbox_content").scrollTop(0);
+  });
+  $(".close").click(function () {
+    $("#infinityTestingOpened").addClass("hide");
+  });
+  $(".back-to-projects").click(function () {
+    $("#infinityTestingOpened").addClass("hide");
+  });
+});
+
+// Optimized A/B
+
+$(document).ready(function () {
+  $("#optimizedABClosed").click(function () {
+    $("#optimizedABOpened").removeClass("hide");
+    $("#optimizedABOpened .lightbox_content").scrollTop(0);
+  });
+  $(".close").click(function () {
+    $("#optimizedABOpened").addClass("hide");
+  });
+  $(".back-to-projects").click(function () {
+    $("#optimizedABOpened").addClass("hide");
+  });
+});

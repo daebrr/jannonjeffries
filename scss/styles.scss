@@ -461,6 +461,38 @@ section.projects {
 	}
 }
 
+.infinity {
+	background-image: url("../images/projects/thumbnails/infinity-testing-thumbnail.jpg");
+	background-size: cover;
+	min-height: 200px;
+	padding: 16px;
+	overflow: hidden;
+	-webkit-transition: all 0.2s ease-in-out;
+
+	&:hover {
+		cursor: pointer;
+		-webkit-transform: scale(1.25, 1.25);
+		transform: scale(1.25, 1.25);
+		-webkit-transition: all 0.2s ease-in-out;
+	}
+}
+
+.optimized {
+	background-image: url("../images/projects/thumbnails/optimized-splits-thumbnail.jpg");
+	background-size: cover;
+	min-height: 200px;
+	padding: 16px;
+	overflow: hidden;
+	-webkit-transition: all 0.2s ease-in-out;
+
+	&:hover {
+		cursor: pointer;
+		-webkit-transform: scale(1.25, 1.25);
+		transform: scale(1.25, 1.25);
+		-webkit-transition: all 0.2s ease-in-out;
+	}
+}
+
 // Lightbox
 
 @keyframes lightbox-fade-in {
