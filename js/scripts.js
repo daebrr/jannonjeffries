@@ -31,32 +31,32 @@ function passWord() {
 
 // Icon hover effect
 
-$(document).ready(function () {
-  $("#resume").hover(
-    function () {
-      $("#resumeIcon")
-        .removeClass("material-icons")
-        .addClass("material-icons-outlined");
-    },
-    function () {
-      $("#resumeIcon")
-        .removeClass("material-icons-outlined")
-        .addClass("material-icons");
-    }
-  );
-  // $("#email").hover(
-  //   function () {
-  //     $("#emailIcon")
-  //       .removeClass("material-icons")
-  //       .addClass("material-icons-outlined");
-  //   },
-  //   function () {
-  //     $("#emailIcon")
-  //       .removeClass("material-icons-outlined")
-  //       .addClass("material-icons");
-  //   }
-  // );
-});
+// $(document).ready(function () {
+//   $("#resume").hover(
+//     function () {
+//       $("#resumeIcon")
+//         .removeClass("material-icons")
+//         .addClass("material-icons-outlined");
+//     },
+//     function () {
+//       $("#resumeIcon")
+//         .removeClass("material-icons-outlined")
+//         .addClass("material-icons");
+//     }
+//   );
+// $("#email").hover(
+//   function () {
+//     $("#emailIcon")
+//       .removeClass("material-icons")
+//       .addClass("material-icons-outlined");
+//   },
+//   function () {
+//     $("#emailIcon")
+//       .removeClass("material-icons-outlined")
+//       .addClass("material-icons");
+//   }
+// );
+// });
 
 // Lightbox
 

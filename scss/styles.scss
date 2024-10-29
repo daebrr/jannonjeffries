@@ -262,10 +262,14 @@ section.about {
       display: inline-block;
       text-decoration: none;
       padding: 16px 16px 16px 0;
+
+      &:hover {
+        font-weight: 700;
+      }
     }
 
-    .material-icons,
-    .material-icons-outlined {
+    .material-symbols,
+    .material-symbols-outlined {
       font-size: 20px;
       display: inherit;
       margin: 0 2px 4px;
